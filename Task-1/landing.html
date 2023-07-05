@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    header {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/e2/7a/a4/caption.jpg?w=800&h=-1&s=1");
+      background-size: cover;
+      font-family: sans-serif;
+    }
+
+    nav {
+      width: 100%;
+      height: 100px;
+      /* background:white ; */
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .logo {
+      
+      font-size: 12px;
+      letter-spacing: 2px;
+     
+      text-align: center;
+      color: white;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 20px;
+      position: relative;
+    }
+
+    .menu a:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      border-bottom: 2px solid indianred;
+      transition: 0.4s linear;
+    }
+
+    .menu a:hover:before {
+      width: 90%;
+    }
+
+    .register a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 20px;
+      background-color: indianred;
+      border-radius: 12px;
+      transition: 0.4s;
+    }
+
+    .register a:hover {
+      background-color: transparent;
+      border: 1px solid indianred;
+    }
+
+    .h-txt {
+
+      max-width: 650px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+
+    }
+
+    .h-txt span {
+      letter-spacing: 5px;
+    }
+
+    .h-txt h1 {
+      font-size: 3.5em;
+    }
+
+    .h-txt a {
+      text-decoration: none;
+      background-color: indianred;
+      color: white;
+      padding: 10px 20px;
+      letter-spacing: 5px;
+
+
+    }
+
+    .h-txt a:hover {
+      background-color: transparent;
+      border: 1px solid indianred;
+    }
+    .logo img{
+      width: 60px;
+    }
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="https://previews.123rf.com/images/yupiramos/yupiramos1406/yupiramos140602176/29308300-travel-design-over-black-background-vector-illustration.jpg" alt="">
+        <p>International Horizon Seekers</p>
+      </div>
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Destinations</a>
+        <a href="#">Best Package's</a>
+        <a href="#">About us</a>
+        <a href="#">contact</a>
+
+      </div>
+      <div class="register">
+        <a href="#">register</a>
+      </div>
+    </nav>
+    <div class="h-txt">
+      <span>Escape the ordinary. Embark on a journey of a lifetime</span>
+      <h1>International Horizon Seekers</h1>
+      <br>
+      <a href="#">Book Your Trip Now</a>
+    </div>
+  </header>
+</body>
+
+</html>
